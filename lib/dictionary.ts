@@ -115,7 +115,7 @@ export const DICTIONARY = {
 
         // Mobile Alert
         mobile_rotate_title: "Gira tu dispositivo",
-        mobile_rotate_desc: "Para una mejor experiencia con los gráficos, recomendamos usar el modo horizontal."
+        mobile_rotate_desc: "Para una mejor experiencia con los gráficos, recomiendo usar el modo horizontal."
     },
     en: {
         // Sección Hero
@@ -231,6 +231,6 @@ export const DICTIONARY = {
 
         // Mobile Alert
         mobile_rotate_title: "Rotate your device",
-        mobile_rotate_desc: "For the best chart experience, we recommend using landscape mode."
+        mobile_rotate_desc: "For the best chart experience, I recommend using landscape mode."
     }
 };

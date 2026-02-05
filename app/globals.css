@@ -38,6 +38,10 @@
   --alert-ring: rgba(59, 130, 246, 0.2);
   --bg-icon-box: #dbeafe;
   --shadow-alert: 0 0 0 1px var(--alert-ring), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  /* Elementos Sutiles (Tiles, Hints) */
+  --bg-highlight: rgba(129, 129, 129, 0);
+  /* Stone-100 con 50% opacidad */
 }
 
 /* CSS Specificity Boost */
@@ -79,6 +83,9 @@ html.dark {
   --alert-ring: rgba(59, 130, 246, 0.2);
   --bg-icon-box: rgba(30, 58, 138, 0.3);
   --shadow-alert: 0 0 0 1px var(--alert-ring), 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+
+  /* Elementos Sutiles (Tiles, Hints) */
+  --bg-highlight: rgb(40, 39, 39);
 }
 
 body {

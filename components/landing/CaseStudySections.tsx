@@ -20,14 +20,14 @@ export function ContextSection() {
                 </div>
                 <div className="bg-[var(--bg-card)] dark:bg-[var(--bg-card)] p-8 rounded-2xl border border-[var(--border-main)] shadow-xl dark:shadow-none">
                     <div className="space-y-4">
-                        <div className="flex items-start gap-4 p-4 rounded-lg bg-stone-100/50 dark:bg-white/5">
+                        <div className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: 'var(--bg-highlight)' }}>
                             <Database className="w-6 h-6 text-emerald-600 dark:text-emerald-400 mt-1" />
                             <div>
                                 <h3 className="text-[var(--text-primary)] font-semibold">{t.volume_title}</h3>
                                 <p className="text-sm text-[var(--text-muted)]">{t.volume_desc}</p>
                             </div>
                         </div>
-                        <div className="flex items-start gap-4 p-4 rounded-lg bg-stone-50 dark:bg-white/5">
+                        <div className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: 'var(--bg-highlight)' }}>
                             <TrendingUp className="w-6 h-6 text-blue-600 dark:text-blue-400 mt-1" />
                             <div>
                                 <h3 className="text-[var(--text-primary)] font-semibold">{t.analysis_title}</h3>
