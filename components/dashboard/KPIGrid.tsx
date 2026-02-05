@@ -65,8 +65,8 @@ export default function KPIGrid() {
                             <metric.icon className={`w-6 h-6 ${metric.color}`} />
                         </div>
                         <div>
-                            <p className="text-sm font-bold text-[var(--text-secondary)] dark:text-gray-400">{metric.label}</p>
-                            <h3 className="text-2xl font-bold text-[var(--text-primary)] dark:text-gray-100">{metric.value}</h3>
+                            <p className="text-sm font-bold text-[var(--text-secondary)]">{metric.label}</p>
+                            <h3 className="text-2xl font-bold text-[var(--text-primary)]">{metric.value}</h3>
                         </div>
                     </CardContent>
                 </Card>

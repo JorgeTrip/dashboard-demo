@@ -12,7 +12,7 @@ export function Navbar() {
                     <div className="bg-[var(--accent-emerald)]/10 p-2 rounded-lg border border-[var(--accent-emerald)]/20">
                         <Monitor className="w-5 h-5 text-[var(--accent-emerald)]" />
                     </div>
-                    <span className="font-bold text-[var(--text-primary)] dark:text-white tracking-tight">Zenith Analytica</span>
+                    <span className="font-bold text-[var(--text-primary)] tracking-tight">Zenith Analytica</span>
                 </div>
 
                 <div className="flex items-center gap-4">

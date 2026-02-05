@@ -81,7 +81,7 @@ export default function SalesMap() {
                         <CircleMarker
                             key={region.name}
                             center={[region.lat, region.lng]}
-                            pathOptions={{ color: '#10b981', fillColor: '#10b981', fillOpacity: 0.5 }}
+                            pathOptions={{ color: 'var(--accent-emerald)', fillColor: 'var(--accent-emerald)', fillOpacity: 0.5 }}
                             radius={Math.log(region.revenue) * 1.5} // Escalamos el radio según la facturación
                         >
                             <Popup className={theme === 'dark' ? 'dark-popup' : ''}>

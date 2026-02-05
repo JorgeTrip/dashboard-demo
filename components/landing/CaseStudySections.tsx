@@ -8,8 +8,8 @@ export function ContextSection() {
         <section className="py-20 border-t border-[var(--border-main)] bg-[var(--bg-section)] dark:bg-[var(--bg-section)]">
             <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 className="text-3xl font-bold text-[var(--text-primary)] dark:text-white mb-6">{t.context_title}</h2>
-                    <div className="space-y-6 text-[var(--text-secondary)] dark:text-slate-400 leading-relaxed">
+                    <h2 className="text-3xl font-bold text-[var(--text-primary)] mb-6">{t.context_title}</h2>
+                    <div className="space-y-6 text-[var(--text-secondary)] leading-relaxed">
                         <p>
                             <strong className="text-emerald-700 dark:text-emerald-400">{t.challenge_title}</strong> {t.challenge_desc}
                         </p>
@@ -23,15 +23,15 @@ export function ContextSection() {
                         <div className="flex items-start gap-4 p-4 rounded-lg bg-stone-100/50 dark:bg-white/5">
                             <Database className="w-6 h-6 text-emerald-600 dark:text-emerald-400 mt-1" />
                             <div>
-                                <h3 className="text-[var(--text-primary)] dark:text-white font-semibold">{t.volume_title}</h3>
-                                <p className="text-sm text-[var(--text-muted)] dark:text-slate-400">{t.volume_desc}</p>
+                                <h3 className="text-[var(--text-primary)] font-semibold">{t.volume_title}</h3>
+                                <p className="text-sm text-[var(--text-muted)]">{t.volume_desc}</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4 p-4 rounded-lg bg-stone-50 dark:bg-white/5">
                             <TrendingUp className="w-6 h-6 text-blue-600 dark:text-blue-400 mt-1" />
                             <div>
-                                <h3 className="text-[var(--text-primary)] dark:text-white font-semibold">{t.analysis_title}</h3>
-                                <p className="text-sm text-[var(--text-muted)] dark:text-slate-400">{t.analysis_desc}</p>
+                                <h3 className="text-[var(--text-primary)] font-semibold">{t.analysis_title}</h3>
+                                <p className="text-sm text-[var(--text-muted)]">{t.analysis_desc}</p>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ export function TechStack() {
 
     const stack = [
         { icon: Terminal, name: "Python", role: t.tech_etl, color: "text-amber-600 dark:text-yellow-400" },
-        { icon: LayoutTemplate, name: "Next.js", role: t.tech_frontend, color: "text-stone-800 dark:text-white" },
+        { icon: LayoutTemplate, name: "Next.js", role: t.tech_frontend, color: "text-[var(--text-primary)]" },
         { icon: Database, name: "TypeScript", role: t.tech_types, color: "text-blue-600 dark:text-blue-500" },
         { icon: TrendingUp, name: "Recharts", role: t.tech_viz, color: "text-rose-600 dark:text-red-400" },
     ];
@@ -59,8 +59,8 @@ export function TechStack() {
                     {stack.map((tech, idx) => (
                         <div key={idx} className="p-6 rounded-xl bg-[var(--bg-card)] dark:bg-[var(--bg-card)] border border-[var(--border-main)] hover:border-emerald-500/50 transition-colors group shadow-sm dark:shadow-none hover:shadow-md">
                             <tech.icon className={`w-10 h-10 ${tech.color} mb-4 group-hover:scale-110 transition-transform`} />
-                            <h3 className="text-xl font-bold text-[var(--text-primary)] dark:text-white mb-2">{tech.name}</h3>
-                            <p className="text-[var(--text-secondary)] dark:text-slate-400 text-sm">{tech.role}</p>
+                            <h3 className="text-xl font-bold text-[var(--text-primary)] mb-2">{tech.name}</h3>
+                            <p className="text-[var(--text-secondary)] text-sm">{tech.role}</p>
                         </div>
                     ))}
                 </div>
@@ -75,8 +75,8 @@ export function Insights() {
     return (
         <section className="py-20 border-t border-[var(--border-main)] bg-[var(--bg-section)] dark:bg-[var(--bg-section)]">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-[var(--text-primary)] dark:text-white mb-4 text-center">{t.insights_title}</h2>
-                <p className="text-[var(--text-secondary)] dark:text-slate-400 text-center mb-12 max-w-2xl mx-auto">
+                <h2 className="text-3xl font-bold text-[var(--text-primary)] mb-4 text-center">{t.insights_title}</h2>
+                <p className="text-[var(--text-secondary)] text-center mb-12 max-w-2xl mx-auto">
                     {t.insights_subtitle}
                 </p>
 
@@ -109,8 +109,8 @@ export function Insights() {
                     ].map((item, idx) => (
                         <div key={idx} className="relative p-8 rounded-2xl bg-[var(--bg-card)] dark:bg-[var(--bg-card)] border border-[var(--border-main)] overflow-hidden shadow-sm dark:shadow-none">
                             <div className="absolute top-0 left-0 w-full h-1 bg-emerald-600 dark:bg-emerald-500" />
-                            <h3 className="text-xl font-bold text-[var(--text-primary)] dark:text-white mb-4">{item.title}</h3>
-                            <p className="text-[var(--text-secondary)] dark:text-slate-400 leading-relaxed text-sm">
+                            <h3 className="text-xl font-bold text-[var(--text-primary)] mb-4">{item.title}</h3>
+                            <p className="text-[var(--text-secondary)] leading-relaxed text-sm">
                                 "{item.desc}"
                             </p>
                         </div>

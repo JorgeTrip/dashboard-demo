@@ -41,7 +41,7 @@ export function SalesTrendChart() {
             .sort((a, b) => a.date.localeCompare(b.date));
     }, [filteredRecords, metric]);
 
-    const color = metric === 'revenue' ? "#10b981" : "#3b82f6";
+    const color = metric === 'revenue' ? "var(--accent-emerald)" : "var(--accent-blue)";
     const label = metric === 'revenue' ? t.tooltip_revenue : t.tooltip_units;
 
     return (
@@ -64,14 +64,14 @@ export function SalesTrendChart() {
                         <XAxis
                             dataKey="date"
                             tickFormatter={(str) => format(parseISO(str), 'd MMM', { locale: currentLocale })}
-                            stroke={theme === 'dark' ? '#9ca3af' : '#44403c'}
-                            tick={{ fontSize: 12 }}
+                            stroke="var(--text-muted)"
+                            tick={{ fontSize: 12, fill: 'var(--text-muted)' }}
                             minTickGap={30}
                         />
                         <YAxis
-                            stroke="var(--text-secondary)"
+                            stroke="var(--text-muted)"
                             tickFormatter={(val) => metric === 'revenue' ? `$${(val / 1000).toFixed(0)}k` : val.toString()}
-                            tick={{ fontSize: 12 }}
+                            tick={{ fontSize: 12, fill: 'var(--text-muted)' }}
                         />
                         <Tooltip
                             contentStyle={getTooltipStyle(theme)}

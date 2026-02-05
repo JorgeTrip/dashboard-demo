@@ -8,8 +8,8 @@ export function MetricToggle({ value, onChange }: { value: Metric; onChange: (m:
             <button
                 onClick={() => onChange('revenue')}
                 className={`px-3 py-1 text-xs font-semibold rounded-md transition-all ${value === 'revenue'
-                    ? 'bg-emerald-600 text-white shadow-sm'
-                    : 'text-[var(--text-secondary)] dark:text-slate-400 hover:text-[var(--text-primary)] dark:hover:text-white'
+                    ? 'bg-[var(--accent-emerald)] text-white shadow-sm'
+                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
                     }`}
             >
                 $
@@ -17,8 +17,8 @@ export function MetricToggle({ value, onChange }: { value: Metric; onChange: (m:
             <button
                 onClick={() => onChange('units')}
                 className={`px-3 py-1 text-xs font-semibold rounded-md transition-all ${value === 'units'
-                    ? 'bg-blue-600 text-white shadow-sm'
-                    : 'text-[var(--text-secondary)] dark:text-slate-400 hover:text-[var(--text-primary)] dark:hover:text-white'
+                    ? 'bg-[var(--accent-blue)] text-white shadow-sm'
+                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
                     }`}
             >
                 Unid.

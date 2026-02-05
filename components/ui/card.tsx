@@ -13,8 +13,8 @@ export function CardHeader({ title, subtitle, className, action }: { title: stri
     return (
         <div className={cn("p-6 pb-2 flex justify-between items-start", className)}>
             <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
-                {subtitle && <p className="text-sm text-gray-500 dark:text-gray-400">{subtitle}</p>}
+                <h3 className="text-lg font-semibold text-[var(--text-primary)]">{title}</h3>
+                {subtitle && <p className="text-sm text-[var(--text-secondary)]">{subtitle}</p>}
             </div>
             {action && <div>{action}</div>}
         </div>

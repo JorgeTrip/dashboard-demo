@@ -29,7 +29,7 @@ export function TopPerformersChart() {
             .slice(0, 5); // Tomamos el Top 5 de vendedores
     }, [filteredRecords, metric]);
 
-    const color = metric === 'revenue' ? "#3b82f6" : "#f59e0b";
+    const color = metric === 'revenue' ? "var(--accent-blue)" : "var(--accent-emerald)";
 
     return (
         <Card className="col-span-1 lg:col-span-1">
@@ -45,7 +45,8 @@ export function TopPerformersChart() {
                         <YAxis
                             type="category"
                             dataKey="name"
-                            tick={{ fontSize: 11, fill: 'var(--text-secondary)' }}
+                            tick={{ fontSize: 11, fill: 'var(--text-muted)' }}
+                            stroke="var(--text-muted)"
                             width={100}
                         />
                         <Tooltip
@@ -91,8 +92,8 @@ export function TopProductsChart() {
     }, [filteredRecords, metric, sortOrder]);
 
     const color = metric === 'revenue'
-        ? (sortOrder === 'desc' ? "#10b981" : "#ef4444")
-        : (sortOrder === 'desc' ? "#8b5cf6" : "#f59e0b");
+        ? (sortOrder === 'desc' ? "var(--accent-emerald)" : "#ef4444")
+        : (sortOrder === 'desc' ? "#8b5cf6" : "var(--accent-blue)");
 
     const titleKey = sortOrder === 'desc' ? 'chart_products_title' : 'chart_bottom_products_title';
     const subKey = metric === 'revenue'

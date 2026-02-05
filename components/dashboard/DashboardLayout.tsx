@@ -23,7 +23,7 @@ function DashboardContent() {
                     <div className="w-3 h-3 rounded-full bg-green-400/20 border border-green-500/50" />
                 </div>
                 <div className="flex-1 text-center">
-                    <span className="text-xs text-stone-500 dark:text-slate-500 font-mono">dashboard.zenithnaturals.com/analytics</span>
+                    <span className="text-xs text-[var(--text-muted)] font-mono">dashboard.zenithnaturals.com/analytics</span>
                 </div>
             </div>
 
