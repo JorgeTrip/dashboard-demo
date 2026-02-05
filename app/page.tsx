@@ -5,12 +5,14 @@ import { ContextSection, TechStack, Insights } from "@/components/landing/CaseSt
 import DashboardWrapper from "@/components/dashboard/DashboardLayout";
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
 import { Navbar } from "@/components/landing/Navbar";
+import { OrientationAlert } from "@/components/dashboard/OrientationAlert";
 
 function PageContent() {
   const { t } = useLanguage();
 
   return (
     <main className="min-h-screen selection:bg-emerald-500/30">
+      <OrientationAlert />
       <Navbar />
       <Hero />
       <ContextSection />

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* --- COLORES BASE (MODO CLARO - Basado en estética móvil) --- */
+  /* --- COLORES BASE (MODO CLARO) --- */
   --background: #faf9f6;
   /* Fondo principal de la página (Hueso) */
   --foreground: #1c1917;
@@ -32,10 +32,17 @@
   /* Verde esmeralda para acentos positivos (Emerald 600) */
   --accent-blue: #2563eb;
   /* Azul para acentos informativos (Blue 600) */
+
+  /* Alertas */
+  --bg-alert: #ffffff;
+  --alert-ring: rgba(59, 130, 246, 0.2);
+  --bg-icon-box: #dbeafe;
+  --shadow-alert: 0 0 0 1px var(--alert-ring), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.dark {
-  /* --- COLORES BASE (MODO OSCURO - Basado en estética escritorio) --- */
+/* CSS Specificity Boost */
+html.dark {
+  /* --- COLORES BASE (MODO OSCURO) --- */
   --background: #0b1120;
   /* Fondo principal (Pizarra Profundo) */
   --foreground: #f8fafc;
@@ -65,6 +72,13 @@
   /* Esmeralda más brillante (Emerald 500) */
   --accent-blue: #60a5fa;
   /* Azul más brillante (Blue 400) */
+
+  /* Alertas */
+  --bg-alert: #0f172a;
+  /* Fondo sólido Slate 900 */
+  --alert-ring: rgba(59, 130, 246, 0.2);
+  --bg-icon-box: rgba(30, 58, 138, 0.3);
+  --shadow-alert: 0 0 0 1px var(--alert-ring), 0 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
 
 body {

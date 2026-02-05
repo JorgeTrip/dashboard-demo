@@ -111,7 +111,11 @@ export const DICTIONARY = {
         hint_interactive: "Interactivo",
         hint_hover_details: "Pasa el mouse para ver detalles",
         hint_zoom_pan: "Usa los botones (+/-) para zoom y arrastra para mover",
-        hint_click_sort: "Click para alternar orden"
+        hint_click_sort: "Click para alternar orden",
+
+        // Mobile Alert
+        mobile_rotate_title: "Gira tu dispositivo",
+        mobile_rotate_desc: "Para una mejor experiencia con los gráficos, recomendamos usar el modo horizontal."
     },
     en: {
         // Sección Hero
@@ -223,6 +227,10 @@ export const DICTIONARY = {
         hint_interactive: "Interactive",
         hint_hover_details: "Hover for details",
         hint_zoom_pan: "Use (+/-) buttons to zoom, drag to pan",
-        hint_click_sort: "Click to toggle sort"
+        hint_click_sort: "Click to toggle sort",
+
+        // Mobile Alert
+        mobile_rotate_title: "Rotate your device",
+        mobile_rotate_desc: "For the best chart experience, we recommend using landscape mode."
     }
 };
