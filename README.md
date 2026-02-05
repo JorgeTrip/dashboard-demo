@@ -1,0 +1,2 @@
+# dashboard
+Sistema de Business Intelligence (BI) desarrollado para una empresa elaboradora de productos naturales (hierbas, aceites y cosmética). El proyecto transforma un dataset de facturación de más de 36,000 registros en un dashboard interactivo que permite la toma de decisiones estratégicas basadas en datos reales del primer trimestre de 2025.  Este desarrollo integra habilidades de Análisis de Datos (Python) con Desarrollo Frontend Moderno (Next.js), resolviendo la dificultad de visualizar tendencias en grandes volúmenes de información operativa.
