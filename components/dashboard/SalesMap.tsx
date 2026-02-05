@@ -8,6 +8,7 @@ import "leaflet/dist/leaflet.css";
 import { useMemo, useEffect, useState } from "react";
 import { Metric, MetricToggle } from "./MetricToggle";
 import { useTheme } from "@/contexts/ThemeContext";
+import { Move } from "lucide-react";
 
 // El uso de CircleMarker evita problemas de iconos por defecto de Leaflet en Next.js.
 
@@ -61,16 +62,21 @@ export default function SalesMap() {
             <CardHeader
                 title={t.chart_map_title}
                 subtitle={t.chart_map_subtitle_rev} // Defaulting to Revenue subtitle as it drives visualization
-                className="z-10 bg-inherit"
             />
+            <div className="w-full bg-stone-50 dark:bg-white/5 border-y border-[var(--border-main)] py-1.5 px-6 flex items-center justify-end gap-2 text-xs text-[var(--text-muted)]">
+                <Move className="w-3 h-3" />
+                <span>{t.hint_zoom_pan}</span>
+            </div>
             <div className="flex-1 w-full relative z-0">
                 <MapContainer
                     center={center}
                     zoom={5}
                     scrollWheelZoom={false}
-                    style={{ height: "100%", width: "100%", background: 'var(--bg-section)' }}
+                    style={{ height: "100%", width: "100%", background: 'transparent' }}
                 >
                     <TileLayer
+                        opacity={theme === 'dark' ? 0.6 : 1}
+                        className={theme === 'dark' ? 'map-tiles-dark' : ''}
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url={theme === 'dark'
                             ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"

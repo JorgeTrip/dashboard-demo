@@ -4,6 +4,7 @@ import { useDashboard } from "@/contexts/DashboardContext";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Cell, PieChart, Pie } from 'recharts';
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { useMemo, useState } from "react";
+import { Info } from "lucide-react";
 import { format, parseISO } from "date-fns";
 import { es } from "date-fns/locale";
 import { Metric, MetricToggle } from "./MetricToggle";
@@ -51,6 +52,10 @@ export function SalesTrendChart() {
                 subtitle={metric === 'revenue' ? t.chart_trend_subtitle_rev : t.chart_trend_subtitle_vol}
                 action={<MetricToggle value={metric} onChange={setMetric} />}
             />
+            <div className="w-full bg-stone-50 dark:bg-white/5 border-y border-[var(--border-main)] py-1.5 px-6 flex items-center justify-end gap-2 text-xs text-[var(--text-muted)]">
+                <Info className="w-3 h-3" />
+                <span>{t.hint_hover_details}</span>
+            </div>
             <CardContent className="h-[350px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
                     <AreaChart data={data}>
@@ -122,6 +127,10 @@ export function CategoryDistributionChart() {
                 subtitle={metric === 'revenue' ? t.chart_category_subtitle_rev : t.chart_category_subtitle_vol}
                 action={<MetricToggle value={metric} onChange={setMetric} />}
             />
+            <div className="w-full bg-stone-50 dark:bg-white/5 border-y border-[var(--border-main)] py-1.5 px-6 flex items-center justify-end gap-2 text-xs text-[var(--text-muted)]">
+                <Info className="w-3 h-3" />
+                <span>{t.hint_hover_details}</span>
+            </div>
             <CardContent className="h-[390px] w-full flex items-center justify-center">
                 <ResponsiveContainer width="100%" height="100%">
                     <PieChart>

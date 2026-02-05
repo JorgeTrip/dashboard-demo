@@ -95,9 +95,9 @@ export const DICTIONARY = {
         chart_bottom_subtitle_rev: "Menos vendidos por ingresos",
         chart_bottom_subtitle_vol: "Menos vendidos por unidades",
 
-        chart_map_title: "Mapa de Calor",
-        chart_map_subtitle_rev: "Concentración geográfica (Ingresos)",
-        chart_map_subtitle_vol: "Concentración geográfica (Volumen)",
+        chart_map_title: "Mapa de Cobertura",
+        chart_map_subtitle_rev: "Concentración geográfica (Ingresos y Volumen)",
+        chart_map_subtitle_vol: "Concentración geográfica (Ingresos y Volumen)",
 
         // Tooltips
         tooltip_revenue: "Venta Total",
@@ -105,7 +105,13 @@ export const DICTIONARY = {
         tooltip_map_rev: "Ventas: ",
         tooltip_map_unit: "Unidades: ",
         tooltip_sort_top: "Ver Más Vendidos",
-        tooltip_sort_bottom: "Ver Menos Vendidos"
+        tooltip_sort_bottom: "Ver Menos Vendidos",
+
+        // Hints
+        hint_interactive: "Interactivo",
+        hint_hover_details: "Pasa el mouse para ver detalles",
+        hint_zoom_pan: "Usa los botones (+/-) para zoom y arrastra para mover",
+        hint_click_sort: "Click para alternar orden"
     },
     en: {
         // Sección Hero
@@ -211,6 +217,12 @@ export const DICTIONARY = {
         tooltip_map_rev: "Sales: ",
         tooltip_map_unit: "Units: ",
         tooltip_sort_top: "Switch to Top 10",
-        tooltip_sort_bottom: "Switch to Bottom 10"
+        tooltip_sort_bottom: "Switch to Bottom 10",
+
+        // Hints
+        hint_interactive: "Interactive",
+        hint_hover_details: "Hover for details",
+        hint_zoom_pan: "Use (+/-) buttons to zoom, drag to pan",
+        hint_click_sort: "Click to toggle sort"
     }
 };

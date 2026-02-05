@@ -54,7 +54,7 @@ export function TechStack() {
     return (
         <section className="py-20 border-t border-[var(--border-main)] bg-[var(--background)]">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-[var(--text-primary)] dark:text-white mb-12 text-center">{t.tech_title}</h2>
+                <h2 className="text-3xl font-bold text-[var(--text-primary)] mb-12 text-center">{t.tech_title}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {stack.map((tech, idx) => (
                         <div key={idx} className="p-6 rounded-xl bg-[var(--bg-card)] dark:bg-[var(--bg-card)] border border-[var(--border-main)] hover:border-emerald-500/50 transition-colors group shadow-sm dark:shadow-none hover:shadow-md">
