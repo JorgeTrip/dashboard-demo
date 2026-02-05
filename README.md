@@ -1,4 +1,4 @@
-# Zenith Analytica - Sales Intelligence Dashboard
+# Zenith Analytica - Tablero de Inteligencia de Ventas
 
 ![Dashboard Preview](https://raw.githubusercontent.com/JorgeTrip/dashboard-demo/main/public/preview.png)
 
@@ -45,4 +45,4 @@ Este dashboard fue desarrollado como una pieza de exhibición para portafolio pr
 Este proyecto ha pasado por un proceso de refactorización integral para unificar la renderización entre diferentes plataformas, asegurando que el contraste y la legibilidad sean óptimos tanto en dispositivos móviles como en pantallas de escritorio.
 
 ---
-Desarrollado con ❤️ por **Jorge O. Tripodi**
+Desarrollado por **Jorge O. Tripodi**
