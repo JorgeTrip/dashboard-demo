@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  /* --- COLORES BASE (MODO CLARO - Basado en estética móvil) --- */
+  --background: #faf9f6;
+  /* Fondo principal de la página (Hueso) */
+  --foreground: #1c1917;
+  /* Texto principal (Stone 950) */
+
+  /* Fondos de estructura */
+  --bg-section: #f5f2ed;
+  /* Fondo para secciones secundarias (Contexto, Insights) */
+  --bg-card: #ffffff;
+  /* Fondo para tarjetas y superficie central del dashboard */
+  --bg-header: #f5f2ed;
+  /* Fondo para el encabezado del dashboard (fake browser) */
+  --bg-input: #f5f2ed;
+  /* Fondo para selects y elementos de entrada de filtros */
+
+  /* Textos y Branding */
+  --text-primary: #0c0a09;
+  /* Texto de títulos de máximo contraste (Stone 950) */
+  --text-secondary: #44403c;
+  /* Texto de descripción y subtítulos (Stone 700) */
+  --text-muted: #78716c;
+  /* Texto de apoyo, iconos y labels (Stone 500) */
+
+  /* Bordes y Acentos */
+  --border-main: #e7e5e4;
+  /* Borde estándar para tarjetas y separadores (Stone 200) */
+  --accent-emerald: #059669;
+  /* Verde esmeralda para acentos positivos (Emerald 600) */
+  --accent-blue: #2563eb;
+  /* Azul para acentos informativos (Blue 600) */
+}
+
+.dark {
+  /* --- COLORES BASE (MODO OSCURO - Basado en estética escritorio) --- */
+  --background: #0b1120;
+  /* Fondo principal (Pizarra Profundo) */
+  --foreground: #f8fafc;
+  /* Texto principal (Blanco azulado) */
+
+  /* Fondos de estructura */
+  --bg-section: rgba(11, 17, 32, 0.5);
+  /* Secciones con ligero contraste */
+  --bg-card: rgba(255, 255, 255, 0.05);
+  /* Tarjetas translúcidas sobre fondo oscuro */
+  --bg-header: #0f172a;
+  /* Encabezado sólido (Slate 900) */
+  --bg-input: rgba(15, 23, 42, 0.5);
+  /* Fondo oscuro para selects */
+
+  /* Textos y Branding */
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  /* Texto de descripción (Slate 400) */
+  --text-muted: #64748b;
+  /* Texto de apoyo (Slate 500) */
+
+  /* Bordes y Acentos */
+  --border-main: rgba(255, 255, 255, 0.1);
+  /* Borde sutil para modo oscuro */
+  --accent-emerald: #10b981;
+  /* Esmeralda más brillante (Emerald 500) */
+  --accent-blue: #60a5fa;
+  /* Azul más brillante (Blue 400) */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Leaflet Dark Mode Popups */
+.dark-popup .leaflet-popup-content-wrapper,
+.dark-popup .leaflet-popup-tip {
+  background: #aac0f0 !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-popup .leaflet-popup-close-button {
+  color: #9ca3af !important;
+}
