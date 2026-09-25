@@ -77,11 +77,10 @@ export default function SalesMap() {
                     <TileLayer
                         opacity={theme === 'dark' ? 0.6 : 1}
                         className={theme === 'dark' ? 'map-tiles-dark' : ''}
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url={theme === 'dark'
-                            ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-                            : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-                        }
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+                        url={`https://{s}.basemaps.cartocdn.com/rastertiles/${
+                            theme === 'dark' ? 'dark_all' : 'light_all'
+                        }/{z}/{x}/{y}{r}.png?key=${process.env.NEXT_PUBLIC_CARTO_API_KEY || 'cb1_3yc8_1_bef76c193d7a4a8e8f17b63a'}`}
                     />
                     {regionMetrics.map((region) => (
                         <CircleMarker
