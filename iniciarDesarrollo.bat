@@ -7,6 +7,11 @@ echo   Iniciando Dashboard Interactivo - Modo Desarrollo
 echo ====================================================
 echo.
 
+node scripts/gestorInstancia.mjs --verificar
+if %ERRORLEVEL% EQU 2 (
+    exit /b 0
+)
+
 node scripts/iniciarDesarrollo.mjs
 if %ERRORLEVEL% NEQ 0 (
     echo.
